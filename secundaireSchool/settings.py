@@ -25,7 +25,7 @@ SECRET_KEY = '(jn0=+b6$fh&%%-2q-3-*ktdyn-r7rb+0@g2^m!9dl*pvqzm2w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'enzotrompeneers.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'secundaireSchool.pythonanywhere.com']
 
 
 # Application definition
