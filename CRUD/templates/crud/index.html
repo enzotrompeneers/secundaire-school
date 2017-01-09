@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KA Go Malle</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'crud/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'crud/css/responsive.css' %}">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="black-banner">
+                <div class="wrapper cfx">
+                    <div id="logo">
+                        <img src="{% static 'crud/svg/gomalle.svg' %}" alt="Logo van Go Malle">
+                    </div>
+                    <nav class="nav-main">
+                        <ul>
+                            <li class="home active"><a href="../home">Home</a></li>
+                            <li class="announcements"><a href="../aanbod">Ons aanbod</a></li>
+                            <li class="eservice"><a href="../wie">Wie is Wie</a></li>
+                          <li class="email"><a href="../contact">Contact</a></li>
+                          <li class="blackboard dropdown"><a href="javascript:void(0)" class="dropbtn">Intranet</a>
+                              <div class="dropdown-content">
+                                  <a href="../richtingen">Richtingen</a>
+                                  <a href="../leraren">Leraren</a>
+                                  <a href="../klassen">Klassen</a>
+                              </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="black-banner">
+                <div class="wrapper">
+                  <nav class="nav-sub">
+                      <h1>Koninklijk Atheneum Go Malle</h1>
+                  </nav>
+                </div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="wrapper">
+                <aside>
+                    <div class="schedule">
+                        <img src="{% static 'crud/images/directie.jpg' %}" alt="Elly Meeus">
+                        <figcaption>Directrice: Elly Meeus</figcaption>
+                        <img src="{% static 'crud/images/fietser.jpg' %}" alt="fietser">
+                        <figcaption>Met de fiets naar school</figcaption>
+                        <img src="{% static 'crud/images/leerling.jpg' %}" alt="leerling">
+                    </div>
+                </aside>
+                <main>
+                    <div class="messages">
+                      <h2>Onze visie</h2>
+                      <p>Onze visie op middelbaar onderwijs en onze school is:</p>
+                      <ul>
+                          <li>In onze school is leren plezant. Met de juiste kennis en vaardigheden ontwikkel je al je talenten en kan je de wereld aan.</li>
+                          <li>n onze school ontdek je zelf. Je krijgt op onze school heel wat kansen om de wereld te verkennen. Je neemt zelf de verantwoordelijkheid om te groeien in je talenten. Dat doe je samen, met respect voor ieders inbreng.</li>
+                          <li>In onze school voel je je goed.Wij vinden het omgaan met verschillen een verrijking. In onze school is iedereen een VIP!</li>
+                      </ul>
+				      <h2>Talent voor techniek</h2>
+                      <p>Onze visie op middelbaar onderwijs en onze school is:</p>
+                      <ul>
+                        <li>Fanatiek in techniek</li>
+                        <li>Rap in wetenschap</li>
+                        <li>Puur in natuur</li>
+                      </ul>
+                      <p>
+                        Van donderdag 12 tot woensdag 18 november organiseren we op onze school een milieu, wetenschap- en techniek week. 
+                      </p>
+                      <p>
+                        We organiseren 2 activiteiten op schoolniveau: donderdag 12 november is er een lezing door Francesca van Thielen over de klimaatzaak. Meer informatie hierover vindt u hiernaast terug. We organiseren ook voor 120 leerlingen uit verschillende basisscholen een 3-tal workshops rond techniek en wetenschap. 
+                      </p>
+                      <p>
+                        Ook tijdens onze lessen komt het thema zoveel mogelijk aan bod: leesteksten tijdens de lessen Frans, Engels en Duits; aan de hand van de film ‘An Inconvenient Truth’ worden de gevolgen van de klimaatopwarming uitgebreid besproken tijdens de lessen aardrijkskunde; de leerlingen van de houtafdeling gaan proberen zelf een machine te repareren om zo te vermijden dat het weggegooid moet worden; door de zes jaren heen werken we tijdens de lessen PO en Expressie aan een project rond natuur, techiek en vervuiling. Het resultaat van dit laatste wordt opgehangen in de refter.
+                      </p>
+                      <p>
+                        Tevens worden onze leerlingen ook uitgedaagd om geld in te zamelen voor de klimaatzaak.
+				      </p>
+                    <h2>Bereikbaarheid met De Lijn</h2>
+                    <p>
+                      Zowel onze hoofdschool als de Didasco-vestiging zijn goed bereikbaar met de bussen van de Lijn. Vanuit alle omliggende gemeenten zijn er busdiensten, soms speciaal voor de secundaire scholen, naar Oostmalle. Sommige lijnen stoppen vlak aan de hoofdschool, halte ‘Kapel RMS’. Voor andere lijnen moet je op- en afstappen aan de halte ‘busstation Oostmalle’. Vanaf deze halte wandel je op 5 minuten naar de hoofdschool of naar de Didasco-vestiging. De eerste schooldagen wachten we je op aan de bushalte om je de veiligste weg naar school te tonen.
+                    </p>
+                      
+                    </div>
+                </main>
+            </div>
+        </section>
+        <footer>
+            <div class="black-banner">
+                <div class="wrapper cfx">
+                    <div id="logo">
+                        <img src="{% static 'crud/svg/gomalle.svg' %}" alt="Logo van Go Malle">
+                    </div>
+                    <nav class="nav-main">
+                        <ul>
+                            <li class="home active"><a href="../home">Home</a></li>
+                            <li class="announcements"><a href="../aanbod">Ons aanbod</a></li>
+                            <li class="eservice"><a href="../wie">Wie is Wie</a></li>
+                          <li class="email"><a href="../contact">Contact</a></li>
+                          <li class="blackboard"><a href="../home">Intranet</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="{% static 'crud/js/main.js' %}"></script>
+</body>
+</html>
