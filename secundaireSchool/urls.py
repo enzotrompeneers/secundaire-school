@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^admin/', admin.site.urls),       # /admin (admin page) # EERST
     url(r'^', include('CRUD.urls')),        # / (loads: home, aanbod, wie, contact, intranet: create, read, update, delete)
-    url(r'^admin/', admin.site.urls),       # /admin (admin page)
+    
 ]
