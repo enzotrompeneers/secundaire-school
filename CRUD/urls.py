@@ -1,8 +1,8 @@
 from django.conf.urls import url
-from .CRUD import views
+from CRUD import views
 
 urlpatterns = [
-    url(r'^', views.home, name='home'), #no path
+   
     url(r'^[iI]ndex/$', views.home, name='home'),
     url(r'^[hH]ome/$', views.home, name='home'),
     url(r'^[aA]anbod/$', views.aanbod, name='aanbod'),
@@ -14,4 +14,6 @@ urlpatterns = [
     url(r'^read/$', views.read, name='read'),
     url(r'^update/$', views.update, name='update'),
     url(r'^delete/$', views.delete, name='delete'),
+
+     url(r'^', views.home, name='home'), #must be last else always home because regex is always found
 ]
