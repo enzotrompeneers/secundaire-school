@@ -2,6 +2,7 @@ from django.conf.urls import url
 from CRUD import views
 
 urlpatterns = [
+    url(r'^', views.home, name='home'),
     url(r'^[iI]ndex/$', views.home, name='home'),
     url(r'^[hH]ome/$', views.home, name='home'),
     url(r'^[aA]anbod/$', views.aanbod, name='aanbod'),

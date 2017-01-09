@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from models import Klassen, Richtingen, Leraren, Contact
+from .models import Klassen, Richtingen, Leraren, Contact
 
 def home(request):
     return render(request, 'crud/index.html')
