@@ -32,7 +32,7 @@ class Contact(models.Model):
     bericht = models.TextField(max_length=2000)
     def __str__(self):
         return '%s %s %s %s' % (self.email, self.telefoonNr, self.adres, self.bericht)
-
+'''
 class ContactForm(ModelForm):
     class Meta:
         model = Contact
@@ -42,3 +42,4 @@ class ContactForm(ModelForm):
                 'unique_together': "%(model_name)s's %(field_labels)s are not unique.",
             }
         }
+'''
