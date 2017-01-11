@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '(jn0=+b6$fh&%%-2q-3-*ktdyn-r7rb+0@g2^m!9dl*pvqzm2w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'gomalle.pythonanywhere.com']
 
