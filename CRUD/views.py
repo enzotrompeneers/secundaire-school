@@ -11,16 +11,14 @@ def aanbod(request):
 def wie(request):
     alleLeraren = Leraren.objects.all()
     return render(request, 'crud/wie.html', {'alleLeraren': alleLeraren})
-
 def contact(request):
     return render(request, 'crud/contact.html') #, {'form': form_class}) #grab form and passing it over into the template
-
-def create(request): 
-	return render(request, 'crud/create.html')
-def read(request): 
-	alle_autos = Autos.objects.all()
-	return render(request, 'crud/index.html', {'alle_autos': alle_autos})
-def update(request): 
-	return render(request, 'crud/update.html')
-def delete(request): 
-	return render(request, 'crud/delete.html')
+def richtingen(request):
+    alleRichtingen = Richtingen.objects.all()
+    return render(request, 'crud/richtingen.html', {'alleRichtingen': alleRichtingen})
+def leraren(request):
+    alleLeraren = Leraren.objects.all()
+    return render(request, 'crud/leraren.html', {'alleLeraren': alleLeraren})
+def klassen(request):
+    alleKlassen = Klassen.objects.all()
+    return render(request, 'crud/klassen.html', {'alleKlassen': alleKlassen})

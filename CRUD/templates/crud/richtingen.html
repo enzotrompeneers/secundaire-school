@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KA Go Malle</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'crud/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'crud/css/responsive.css' %}">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="black-banner">
+                <div class="wrapper cfx">
+                    <div id="logo">
+                        <img src="{% static 'crud/svg/gomalle.svg' %}" alt="Logo van Go Malle">
+                    </div>
+                    <nav class="nav-main">
+                        <ul>
+                            <li class="home"><a href="../home">Home</a></li>
+                            <li class="announcements"><a href="../aanbod">Ons aanbod</a></li>
+                            <li class="eservice"><a href="../wie">Wie is Wie</a></li>
+                            <li class="email"><a href="../contact">Contact</a></li>
+                            <li class="blackboard dropdown active"><a href="javascript:void(0)" class="dropbtn">Intranet</a>
+                              <div class="dropdown-content">
+                                  <a href="../richtingen">Richtingen</a>
+                                  <a href="../leraren">Leraren</a>
+                                  <a href="../klassen">Klassen</a>
+                              </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="black-banner">
+                <div class="wrapper">
+                  <nav class="nav-sub">
+                      <h1>Koninklijk Atheneum Go Malle</h1>
+                  </nav>
+                </div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="wrapper">
+                <main>
+                    <div class="messages">
+
+                      <h2>Richtingen</h2>
+                      <div class="messages">
+                        {% for richting in alleRichtingen %}
+                            <h3 id="{{richting.id}}">{{richting.naam}}</h3>
+                            <p>{{richting.omschrijving}}</p>
+                            <a href="#">Wijzigen</a>
+                            <a href="#">Verwijderen</a>
+                            <hr>
+                        {% endfor %}
+                    </div>
+                      <h3>Nieuwe richting maken</h3>
+
+                    </div>
+                </main>
+            </div>
+        </section>
+        <footer>
+            <div class="black-banner">
+                <div class="wrapper cfx">
+                    <div id="logo">
+                        <img src="{% static 'crud/svg/gomalle.svg' %}" alt="Logo van Go Malle">
+                    </div>
+                    <nav class="nav-main">
+                        <ul>
+                            <li class="home"><a href="../home">Home</a></li>
+                            <li class="announcements"><a href="../aanbod">Ons aanbod</a></li>
+                            <li class="eservice"><a href="../wie">Wie is Wie</a></li>
+                          <li class="email"><a href="../contact">Contact</a></li>
+                          <li class="blackboard active"><a href="../home">Intranet</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="{% static 'crud/js/main.js' %}"></script>
+</body>
+</html>

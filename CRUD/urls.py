@@ -9,11 +9,10 @@ urlpatterns = [
     url(r'^[oO]ns[/s] [aA]anbod/$', views.aanbod, name='aanbod'),
     url(r'^[wW]ie/$', views.wie, name='wie'),
     url(r'^[cC]ontact/$', views.contact, name='contact'),
-
-    url(r'^create/$', views.create, name='create'),
-    url(r'^read/$', views.read, name='read'),
-    url(r'^update/$', views.update, name='update'),
-    url(r'^delete/$', views.delete, name='delete'),
+    
+    url(r'^[rR]ichtingen/$', views.richtingen, name='richtingen'),
+    url(r'^[lL]eraren/$', views.leraren, name='leraren'),
+    url(r'^[kK]lassen/$', views.klassen, name='klassen'),
 
      url(r'^', views.home, name='home'), #must be last else always home because regex is always found
 ]
